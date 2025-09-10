@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Teste</title>
+</head>
+<body>
+    <!--MENU NAVEGAÇÃO-->
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">início</a>
+            </li>
+            <li>
+                <a href="#Sobre" class="menu-link">Sobre mim</a>
+            </li>
+            <li>
+                <a href="#Projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#Certificacao" class="menu-link">Certificações</a>
+            </li>
+            <li>
+                <a href="#Contatos" class="menu-link">Contatos</a>
+            </li>
+            <li>
+                <a href="#Redes" class="menu-link">Perfil</a>
+            </li>
+        </ul>
+    </nav>
+
+ <!--MAIN INICIO PORTIFOLIO-->
+     <main id="inicio" class="cabecalho">
+        <img src="imgs/dev.jpg" alt="Foto do Desenvolvedor" class="Foto-Dev">
+        <h1 class="nome-dev">Washington Lourenço</h1>
+        <p class="cargo-dev">Desenvolvedor Front-end</p>
+    </main>
+
+<!--SOBRE MIM-->
+    <section id="Sobre" class="Sobre">
+        <h1 class="sobre-titulo">SOBRE MIM</h1>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                    Meu nome e Washington Lourenço e sou estudante de Análise e Desenvolvimento de Sistemas pela UniFavip Wyden, sou um profissional em formação com sólida base em tecnologia da informação, desenvolvimento web e gestão. 
+                </p>
+            </div>
+    </section>
+
+<!--Projetos-->
+<section id="Projetos" class="Projetos">
+    <h1 class="Projetos-titulo">Projetos</h1>
+    <div class="Projetos-caixa">
+<!--Projetos1-->          
+        <div class="Projetos-card">
+           <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="Projeto 1" class="imagem-projeto">
+           <div class="caixa-textos-project">
+           <h3 class="info-projetos">Nome Projeto 1</h3>
+           <p class="projetos-paragrafo">Descreva Projeto</p>
+            </div>
+        </div>
+<!--Projetos2-->             
+        <div class="Projetos-card">
+            <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="Projeto 2" class="imagem-projeto">
+            <div class="caixa-textos-project">
+            <h3 class="info-projetos">Nome Projeto 2</h3>
+            <p class="projetos-paragrafo">Descreva Projeto</p>
+            </div>
+        </div>
+<!--Projetos3-->             
+        <div class="Projetos-card">
+            <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="Projeto 3" class="imagem-projeto">
+            <div class="caixa-textos-project">
+            <h3 class="info-projetos">Nome Projeto 3</h3>
+            <p class="projetos-paragrafo">Descreva Projeto</p>
+            </div>
+        </div>         
+    </div>
+</section>
+
+<!--Certificado-->
+    <section id="Certificacao" class="Certificacao">
+        <h1 class="Certificacao-titulo">Certificações</h1>
+        <div class="Certificacao-caixa">
+            <!--certificado1-->
+            <div class="Certificacao-card">
+                <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="imgCertificado-projeto" class="imgCertificado">
+                <div class="caixa-textos-certificado">
+                <h3 class="info-certificacao">Certificado 1</h3>
+                <h4 class="info-certificacao2">Unidade de Conclusção</h4>
+                <p class="Certificacao-paragrafo">Descrever Certificado</p>
+                </div>
+            </div>
+            <!--certificado2-->
+            <div class="Certificacao-card">
+                <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="imgCertificado-projeto" class="imgCertificado">
+                <div class="caixa-textos-certificado">
+                <h3 class="info-certificacao">Certificado 2</h3>
+                <h4 class="info-certificacao2">Unidade de Conclusção</h4>
+                <p class="Certificacao-paragrafo">Descrever Certificado</p>
+                </div>
+            </div>
+            <!--certificado3-->
+            <div class="Certificacao-card">
+                <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="imgCertificado-projeto" class="imgCertificado">
+                <div class="caixa-textos-certificado">
+                <h3 class="info-certificacao">Certificado 3</h3>
+                <h4 class="info-certificacao2">Unidade de Conclusção</h4>
+                <p class="Certificacao-paragrafo">Descrever Certificado</p>
+                </div>
+            </div>
+            <!--certificado4-->
+            <div class="Certificacao-card">
+                <img src="imgs/CONTROL PROJECT (1600 x 900 px).jpg" alt="imgCertificado-projeto" class="imgCertificado">
+                <div class="caixa-textos-certificado">
+                <h3 class="info-certificacao">Certificado 4</h3>
+                <h4 class="info-certificacao2">Unidade de Conclusção</h4>
+                <p class="Certificacao-paragrafo">Descrever Certificado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Contato Formulario-->
+    <section id="Contatos" class="Contatos">
+        <h2 class="Contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario">
+
+        <!--Formulario-->
+        <div class="grupo-form">
+            <input placeholder="nome" class="campo-form">
+        </div>
+        <div class="grupo-form">
+            <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
+        </div>
+        <button type="submit" class="botao-form">Enviar um WhatsApp</button>
+        </form>
+    </section>
+
+<!--Redes Sociais-->
+    <section id="Redes" class="redes">
+        <h2 class="redes-titulo">Entre em contato ou venha conhecer um pouco de minha pessoas pelas redes Sociais</h2>
+<!--Redes Sociais objetos-->
+    <div class="redes-cards">
+        
+        <h3 class="Linkedln">Linkedln</h3>
+        <a href="https://www.linkedin.com/in/washington-louren%C3%A7o-29745b381/" class="Linkedln-link" target="_blank">Meu LinkedIn</a>
+
+        <h3 class="GitHub">GitHub</h3>
+        <a href="https://github.com/Dev-Washington" class="GitHub-link" target="_blank">Meu GitHub</a>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+/*CSS DA PAGINA PORTIFOLIO*/
+
+
+
+
+
+/*formatando pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*scroll do mouse na pagina*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variáveis CSS para cores */
+:root{
+    --primaria: #46abe5;
+    --secundaria: #1e73c2;
+    --terceiaria: #073c6d;
+    --escuro: #0f172a;
+    --mais-escuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: #ffffff1a;
+    --vidro2: #05184186;
+    --bordafoto: #2db6f5;
+    --nomedev: #54bcec;
+    --cargo-dev: #9cd4ee;
+} 
+/*corpo*/
+body{
+    background-color: var(--mais-escuro);
+    color: var(--claro);
+}
+
+/*navegação*/
+.navegacao {
+    position: fixed;
+    background-color: var(--escuro);
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    padding: 1.5rem;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.menu-link {
+    position: relative;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    display: block;
+    z-index: 1;
+    transition: width 0.5s ease;
+}
+.menu-link:hover::after{
+    width: 100%;
+   
+}
+/* cabecalho MAIN */
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Foto-Dev{
+    width: 300px;
+    right: 200px;
+    box-shadow: 1px 5px 96px 61px rgba(15,52,130,0.75);
+    -webkit-box-shadow: 1px 5px 96px 61px rgba(15,52,130,0.75);
+    -moz-box-shadow: 1px 5px 96px 61px #0f3482bf;
+    border-radius: 60%;
+    border: 4px solid var(--bordafoto);
+}
+.nome-dev{
+    font-size: 3.5rem;
+    color: var(--nomedev);
+    font-weight: bold;
+    margin: 5px;
+}
+.cargo-dev{
+    font-size: 1.7rem;
+    color: var(--cargo-dev);
+    font-weight: bold;
+    margin: -10px;
+}
+/* SOBRE MIM */
+.Sobre{
+    padding: 6rem 2rem;
+}
+
+.sobre-titulo{
+    text-align: center;
+    margin: 5rem;
+    font-size: 2rem;
+    color: var(--claro);
+    position: relative;
+    top: 19px;
+}
+
+.sobre-caixa{
+    padding: 2rem;
+    max-width: 650px;
+    margin: 1px auto 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    background: var(--vidro2);
+    box-shadow: 1px 17px 69px 53px rgba(20,25,54,0.75) inset;
+    -webkit-box-shadow: 1px 17px 69px 53px rgba(20,25,54,0.75) inset;
+    -moz-box-shadow: 1px 17px 69px 53px rgba(20,25,54,0.75) inset;
+    backdrop-filter: blur(10px);
+}
+
+.sobre-paragrafo{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* PROJETOS */
+.Projetos{
+    position: relative;
+    top: 100px; 
+    padding: 6rem 2rem;
+}
+
+.imagem-projeto{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.Projetos-card{
+    background: var(--vidro2);
+    border-radius: 17px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Projetos-card:hover{
+    box-shadow: 1px 23px 25px 3px var(--vidro2);
+    transform: translateY(-5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro2);
+    
+}
+
+.Projetos-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Projetos-titulo{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.projetos-paragrafo{
+    color: var(--cargo-dev);
+    line-height: 1.25rem;
+
+}
+.caixa-textos-project{
+    padding: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.info-projetos{
+    margin-bottom: 4px;
+}
+/* certificados */
+
+.Certificacao{
+    padding: 6rem 2rem;
+    margin-top: 40px;
+}
+
+.Certificacao-titulo{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top: -40px;
+}
+
+
+.Certificacao-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Certificacao-card{
+    background: var(--vidro2);
+    border-radius: 17px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Certificacao-card:hover{
+    box-shadow: 1px 23px 25px 3px var(--vidro2);
+    transform: translateY(-5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro2);
+    
+}
+
+.imgCertificado{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa-textos-certificado{
+    padding: 1.5rem;
+    margin-bottom: 5px;
+    
+}
+
+.info-certificacao{
+    margin-bottom: 4px;
+}
+
+.info-certificacao2{
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: var(--cargo-dev);
+    
+}
+
+.Certificacao-paragrafo{
+    color: var(--cargo-dev);
+    line-height: 1.25rem;
+}
+/* CONTATO */
+.Contatos{
+    padding: 6rem 2rem;
+}
+
+.Contatos-titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+/* FORMULARIO CONTATO */
+.formulario-contato{
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--vidro);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro2);
+    border-radius: 16px;
+}
+
+.grupo-form{
+    margin-bottom: 1.5rem;
+}
+.campo-form:focus {
+    border-color: var(--primaria);
+    box-shadow: -6px -1px 31px 1px rgba(6, 57, 104, 0.75);
+}
+.campo-form{
+    width: 100%;
+    padding: 1rem;
+    background: var(--vidro2);
+    border-radius: 7px;
+    border: 1px solid var(--vidro2);
+    color: var(--claro);
+    outline: none;
+    
+}
+.botao-form{
+    color: var(--terceiaria);
+    background: linear-gradient(45deg, var(--terceiaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+    color: var(--claro);
+}
+.botao-form:hover{
+    transform: translateY(-4px);
+    box-shadow: -6px -1px 31px 1px rgba(6, 57, 104, 0.75);
+
+}
+/*redes sociais*/
+.redes{
+    padding: 6rem 2rem;
+}
+
+.redes-cards{
+    margin: 0 auto;
+    background: var(--vidro);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--escuro);
+    border-radius: 17px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+}
+
+.redes-titulo{
+    text-align: center;
+    margin: 10px;
+}
+
+.Linkedln{
+    color: var(--claro);
+    font-weight: bold;
+}
+
+.GitHub{
+    font-weight: bold;
+    color: var(--claro);
+}
+
+.GitHub-link{
+    color: var(--secundaria);
+}
+.Linkedln-link{
+    color: var(--secundaria);
+}
+
+.Linkedln::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: url('../code/imgs/icons/linkedin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.GitHub::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: url('../code/imgs/icons/github.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
